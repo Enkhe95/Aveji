@@ -7,13 +7,13 @@ html {
   max-width: 1440px;
   height: 5887px;
   overflow-x: hidden;
-}
-
-/* body style */
-.body {
   font-weight: normal;
   font-family: "Roboto", Georgia sans-serif;
   color: #212529;
+}
+
+  .body {
+    margin: 0;
 }
 
  /* header style */
@@ -26,7 +26,6 @@ html {
 }
 
 .icon {
-  margin-left: 32px;
   width: 70px;
   height: 74.38px;
 }
@@ -50,6 +49,7 @@ html {
 .nav_link {
   position: relative;
   text-decoration-line: none;
+  color: black;
 }
 
 .nav_link::after {
@@ -71,4 +71,68 @@ html {
   margin-top: 0;
   margin-right: 32px;
   margin-bottom: 85px;
+}
+
+/* main style */
+.main {
+  margin-top: 20px;
+  max-width: 1376px;
+}
+
+
+/* hero style */
+.hero {
+  height: 1107px;
+}
+.hero_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero_title {
+  margin: 0;
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: clamp(2rem, 1.242rem + 3.79vw, 4.5rem);;
+  line-height: 120%;
+  
+}
+
+.hero_link {
+  position: relative;
+  margin: 0;
+  text-decoration-line: none;
+  color: #212529;
+}
+.hero_link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px; 
+  background-color: black;
+  transition: width 0.3s ease-out, opacity 0.3s ease-out;
+  width: 100%;
+}
+
+.hero_link:hover::after {
+  width: 0; 
+}
+.hero_link:hover {
+  opacity: 0.5;
+}
+
+.hero_sublink {
+  margin: 0px;
+  margin-top: 235px;
+}
+
+.hero_text {
+  margin: 40px 0 0 0;
+  font-size: 20px;
+}
+
+.hero_img {
+  margin-left: 365px
 }
