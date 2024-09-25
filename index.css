@@ -3,15 +3,14 @@
 
 /* root style */
 html {
-  margin: 0;
-  min-width: 1440px;
+  margin: 0 auto;
+  max-width: 1440px;
   height: 5887px;
   overflow-x: hidden;
 }
 
 /* body style */
 .body {
-  margin: 0px;
   font-weight: normal;
   font-family: "Roboto", Georgia sans-serif;
   color: #212529;
@@ -20,7 +19,7 @@ html {
  /* header style */
 .header {
   margin-top: 12px;
-  max-width: 100vw;
+  max-width: 1376px;
   height: 108px;
   display: flex;
   justify-content: space-between;
