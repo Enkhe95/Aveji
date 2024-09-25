@@ -10,6 +10,7 @@ html {
   font-weight: normal;
   font-family: "Roboto", Georgia sans-serif;
   color: #212529;
+  box-sizing: border-box;
 }
 
   .body {
@@ -26,6 +27,7 @@ html {
 }
 
 .icon {
+  margin-left: 32px;
   width: 70px;
   height: 74.38px;
 }
@@ -33,7 +35,8 @@ html {
 .container {
   display: flex;
   align-items: center;
-  gap: 207px;
+  justify-content: space-between;
+  gap:203px;
 }
 .nav {
   display: flex;
@@ -69,7 +72,7 @@ html {
 
 .nav_number {
   margin-top: 0;
-  margin-right: 32px;
+  margin-right: 45px;
   margin-bottom: 85px;
 }
 
@@ -82,11 +85,13 @@ html {
 
 /* hero style */
 .hero {
-  height: 1107px;
+  height: auto;
+  margin: 40px 32px 0 32px; 
 }
 .hero_content {
   display: flex;
   justify-content: space-between;
+  gap: 418.5px;
 }
 
 .hero_title {
@@ -103,6 +108,8 @@ html {
   margin: 0;
   text-decoration-line: none;
   color: #212529;
+  font-size: 18px;
+  font-weight: 400;
 }
 .hero_link::after {
   content: '';
@@ -133,6 +140,18 @@ html {
   font-size: 20px;
 }
 
-.hero_img {
-  margin-left: 365px
+.hero_container {
+  max-width: 100%;
+  height: auto; /* или center, если хотите центрировать изображения */
+}
+
+.hero_img1 {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero_img2 {
+  max-width: 100%;
+  height: auto;
+  margin-left: 300px;
 }
