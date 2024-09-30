@@ -8,16 +8,16 @@ html {
   height: 5887px;
   overflow-x: hidden;
   font-weight: normal;
-  font-family: "Roboto", Georgia sans-serif;
+  font-family: 'Roboto', Georgia sans-serif;
   color: #212529;
   box-sizing: border-box;
 }
 
-  .body {
-    margin: 0;
+.body {
+  margin: 0;
 }
 
- /* header style */
+/* header style */
 .header {
   margin-top: 12px;
   max-width: 1376px;
@@ -36,7 +36,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap:203px;
+  gap: 203px;
 }
 .nav {
   display: flex;
@@ -61,13 +61,13 @@ html {
   left: 0;
   bottom: 0;
   width: 0;
-  height: 1px; 
+  height: 1px;
   background-color: black;
-  transition: width 0.3s ease; 
+  transition: width 0.3s ease;
 }
 
 .nav_link:hover::after {
-  width: 100%; 
+  width: 100%;
 }
 
 .nav_number {
@@ -82,11 +82,10 @@ html {
   max-width: 1376px;
 }
 
-
 /* hero style */
 .hero {
   height: auto;
-  margin: 40px 32px 0 32px; 
+  margin: 40px 32px 0 32px;
 }
 .hero_content {
   display: flex;
@@ -98,9 +97,8 @@ html {
   margin: 0;
   font-family: Helvetica;
   font-weight: 400;
-  font-size: clamp(2rem, 1.242rem + 3.79vw, 4.5rem);;
+  font-size: clamp(2rem, 1.242rem + 3.79vw, 4.5rem);
   line-height: 120%;
-  
 }
 
 .hero_link {
@@ -117,14 +115,14 @@ html {
   left: 0;
   bottom: 0;
   width: 0;
-  height: 1px; 
+  height: 1px;
   background-color: black;
   transition: width 0.3s ease-out, opacity 0.3s ease-out;
   width: 100%;
 }
 
 .hero_link:hover::after {
-  width: 0; 
+  width: 0;
 }
 .hero_link:hover {
   opacity: 0.5;
@@ -157,3 +155,9 @@ html {
 }
 
 /* about style */
+.about {
+  width: 1376px;
+  height: 1387px;
+  display: flex;
+  gap: 135px;
+}
